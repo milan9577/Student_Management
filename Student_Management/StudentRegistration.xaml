@@ -1,0 +1,78 @@
+﻿<Window x:Class="Student_Management.StudentRegistration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Student_Management"
+        mc:Ignorable="d"
+        Title="StudentRegistration" Height="683" Width="525">
+    <Grid Margin="6,8,-6,-8">
+        <Label x:Name="label" Content="Students Registration" VerticalAlignment="Top" Height="38" Width="507" FontWeight="Bold" FontSize="15" Background="#FFAAD352" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="0,0,10,0"/>
+        <Label x:Name="label1" Content="First Name" HorizontalAlignment="Left" Margin="16,95,0,0" VerticalAlignment="Top" Height="21" Width="59" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <TextBox x:Name="FName_Box" HorizontalAlignment="Left" Height="21" Margin="80,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" Background="#FFBCEAE4" FontWeight="Bold"/>
+        <Label x:Name="label1_Copy" Content="Last Name" HorizontalAlignment="Left" Margin="273,95,0,0" VerticalAlignment="Top" Height="21" Width="59" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <TextBox x:Name="LName_Box" HorizontalAlignment="Left" Height="21" Margin="350,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" Background="#FFBCEAE4" FontWeight="Bold"/>
+        <Label x:Name="label1_Copy1" Content="Age" HorizontalAlignment="Left" Margin="42,133,0,0" VerticalAlignment="Top" Height="21" Width="33" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <TextBox x:Name="Age_box" HorizontalAlignment="Left" Height="21" Margin="80,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" Background="#FFBCEAE4" FontWeight="Bold"/>
+        <Label x:Name="label1_Copy2" Content="Sex" HorizontalAlignment="Left" Margin="273,140,0,0" VerticalAlignment="Top" Height="21" Width="33" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <Label x:Name="label1_Copy3" Content="Semester" HorizontalAlignment="Left" Margin="239,175,0,0" VerticalAlignment="Top" Height="22" Width="70" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <Label x:Name="label1_Copy4" Content="Religion" HorizontalAlignment="Left" Margin="262,219,0,0" VerticalAlignment="Top" Height="22" Width="44" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <Label x:Name="label1_Copy5" Content="Email" HorizontalAlignment="Left" Margin="45,286,0,0" VerticalAlignment="Top" Height="21" Width="31" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <TextBox x:Name="mail_box" HorizontalAlignment="Left" Height="21" Margin="83,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="338" Background="#FFBCEAE4" FontWeight="Bold"/>
+        <Label x:Name="label1_Copy6" Content="Phone" HorizontalAlignment="Left" Margin="40,323,0,0" VerticalAlignment="Top" Height="20" Width="42" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE" RenderTransformOrigin="0.526,2.13"/>
+        <TextBox x:Name="Phn_Box" HorizontalAlignment="Left" Height="21" Margin="89,322,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="338" Background="#FFBCEAE4" FontWeight="Bold"/>
+        <Label x:Name="label1_Copy7" Content="Date Of Birth" HorizontalAlignment="Left" Margin="33,356,0,0" VerticalAlignment="Top" Height="21" Width="68" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE" RenderTransformOrigin="0.526,2.13"/>
+        <Label x:Name="label1_Copy8" Content="Location" HorizontalAlignment="Left" Margin="33,525,0,0" VerticalAlignment="Top" Height="20" Width="42" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE" RenderTransformOrigin="0.526,2.13"/>
+        <Label x:Name="label1_Copy10" Content="Password" HorizontalAlignment="Left" Margin="25,563,0,0" VerticalAlignment="Top" Height="21" Width="57" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE" RenderTransformOrigin="0.526,2.13"/>
+        <RadioButton x:Name="RB_Male" Content="Male" HorizontalAlignment="Left" Margin="311,146,0,0" VerticalAlignment="Top" Height="12" Width="52" FontSize="8" GroupName="Sex_Group" Background="#FFBCEAE4"/>
+        <RadioButton x:Name="RB_Female" Content="Female" HorizontalAlignment="Left" Margin="363,146,0,0" VerticalAlignment="Top" Height="12" Width="52" FontSize="8" GroupName="Sex_Group" Background="#FFBCEAE4"/>
+        <RadioButton x:Name="RB_Other" Content="Other" HorizontalAlignment="Left" Margin="420,146,0,0" VerticalAlignment="Top" Height="12" Width="52" FontSize="8" GroupName="Sex_Group" Background="#FFBCEAE4"/>
+        <Button x:Name="button" Content="Submit" HorizontalAlignment="Left" Margin="132,602,0,0" VerticalAlignment="Top" Width="75" Background="#FF0CC6CF" Click="Reg_Click_btn"/>
+        <Button x:Name="button_Copy" Content="Reset" HorizontalAlignment="Left" Margin="262,602,0,0" VerticalAlignment="Top" Width="75" Background="#FFE84066" Click="Reset_btn"/>
+        <ComboBox x:Name="comboBox_rl" HorizontalAlignment="Left" Margin="321,219,0,0" VerticalAlignment="Top" Width="106">
+            <ComboBoxItem Content="Hindu"/>
+            <ComboBoxItem Content="Muslim"/>
+            <ComboBoxItem Content="Buddhist"/>
+            <ComboBoxItem Content="Christian"/>
+        </ComboBox>
+        <Calendar x:Name="cal_date" HorizontalAlignment="Left" Margin="117,356,0,0" VerticalAlignment="Top" Height="150" Width="201"/>
+        <TextBox x:Name="Loc_box" HorizontalAlignment="Left" Height="21" Margin="106,524,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="338" Background="#FFBCEAE4" FontWeight="Bold"/>
+        <PasswordBox x:Name="Pass_box" HorizontalAlignment="Left" Margin="106,563,0,0" VerticalAlignment="Top" Height="21" Width="169" Background="#FFBCEAE4"/>
+        <Label x:Name="label1_Copy12" Content="ID" HorizontalAlignment="Left" Margin="53,62,0,0" VerticalAlignment="Top" Height="20" Width="22" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <TextBox x:Name="ID_box" HorizontalAlignment="Left" Height="21" Margin="80,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="249" Background="#FFBCEAE4" FontWeight="Bold"/>
+        <Label x:Name="label1_Copy9" Content="Department" HorizontalAlignment="Left" Margin="16,175,0,0" VerticalAlignment="Top" Height="22" Width="70" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <ComboBox x:Name="comboBox_dprtmnt" HorizontalAlignment="Left" Margin="89,175,0,0" VerticalAlignment="Top" Width="106" SelectedIndex="0">
+            <ComboBoxItem Content="CSE"/>
+            <ComboBoxItem Content="EEE"/>
+            <ComboBoxItem Content="CIVIL"/>
+            <ComboBoxItem Content="BBA"/>
+        </ComboBox>
+        <ComboBox x:Name="comboBox_semester" HorizontalAlignment="Left" Margin="321,175,0,0" VerticalAlignment="Top" Width="106" SelectedIndex="0">
+            <ComboBoxItem Content="1_1"/>
+            <ComboBoxItem Content="1_2"/>
+            <ComboBoxItem Content="1_3"/>
+            <ComboBoxItem Content="2_1"/>
+            <ComboBoxItem Content="2_2"/>
+            <ComboBoxItem Content="2_3"/>
+            <ComboBoxItem Content="3_1"/>
+            <ComboBoxItem Content="3_2"/>
+            <ComboBoxItem Content="3_3"/>
+            <ComboBoxItem Content="4_1"/>
+            <ComboBoxItem Content="4_2"/>
+            <ComboBoxItem Content="4_3"/>
+        </ComboBox>
+        <Label x:Name="label1_Copy11" Content="Section" HorizontalAlignment="Left" Margin="16,210,0,0" VerticalAlignment="Top" Height="22" Width="70" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <ComboBox x:Name="comboBox_section" HorizontalAlignment="Left" Margin="89,210,0,0" VerticalAlignment="Top" Width="106" SelectedIndex="0">
+            <ComboBoxItem Content="A"/>
+            <ComboBoxItem Content="B"/>
+            <ComboBoxItem Content="C"/>
+            <ComboBoxItem Content="D"/>
+        </ComboBox>
+        <Label x:Name="label1_Copy13" Content="CGPA" HorizontalAlignment="Left" Margin="45,246,0,0" VerticalAlignment="Top" Height="21" Width="33" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <TextBox x:Name="cgpa_box" HorizontalAlignment="Left" Height="21" Margin="87,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" Background="#FFBCEAE4" FontWeight="Bold"/>
+        <Button x:Name="button_Copy1" Content="Back" HorizontalAlignment="Left" Margin="11,607,0,0" VerticalAlignment="Top" Width="75" Background="#FFBC6FD8" Click="Back_Button"/>
+        <TextBlock x:Name="for_id" HorizontalAlignment="Left" Margin="392,380,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Background="#FFF6F7F7" Height="18" RenderTransformOrigin="1.269,2.737" FontSize="18" FontWeight="Bold" Foreground="#FFF7F3F3"/>
+        <TextBlock x:Name="for_name" HorizontalAlignment="Left" Margin="350,356,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" RenderTransformOrigin="1.462,-0.459" Height="24" FontWeight="Bold" FontFamily="Monotype Corsiva" FontSize="20" Background="#FFF4F9F8" Foreground="#FFF3F2F2"/>
+
+    </Grid>
+</Window>

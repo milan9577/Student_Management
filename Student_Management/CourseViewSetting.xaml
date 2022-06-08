@@ -1,0 +1,53 @@
+﻿<Window x:Class="Student_Management.CourseViewSetting"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Student_Management"
+        mc:Ignorable="d"
+        Title="CourseViewSetting" Height="419" Width="525">
+    <Grid>
+        <Label x:Name="label1" Content="Course Information Setting" VerticalAlignment="Top" Height="40" Width="518" FontWeight="Bold" FontSize="15" Background="#FFAAD352" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="-3,2,2,0"/>
+        <TextBox x:Name="ID_box_s" HorizontalAlignment="Left" Height="21" Margin="116,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="249" Background="#FFBCEAE4" FontWeight="Bold"/>
+        <Label x:Name="label1_Copy" Content="Search ID" HorizontalAlignment="Left" Margin="52,62,0,0" VerticalAlignment="Top" Height="20" Width="52" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <Button x:Name="button" Content="Search" HorizontalAlignment="Left" Margin="377,61,0,0" VerticalAlignment="Top" Width="75" Background="#FF0CC6CF" Click="search_btn"/>
+        <Label x:Name="label1_Copy1" Content="course Name" HorizontalAlignment="Left" Margin="46,157,0,0" VerticalAlignment="Top" Height="21" Width="59" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <TextBox x:Name="FName_Box" HorizontalAlignment="Left" Height="21" Margin="116,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="373" Background="#FFBCEAE4" FontWeight="Bold"/>
+        <Label x:Name="label1_Copy3" Content="Semester" HorizontalAlignment="Left" Margin="46,227,0,0" VerticalAlignment="Top" Height="21" Width="59" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <Label x:Name="label1_Copy12" Content="Course ID" HorizontalAlignment="Left" Margin="57,123,0,0" VerticalAlignment="Top" Height="20" Width="48" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <TextBox x:Name="ID_box" HorizontalAlignment="Left" Height="20" Margin="116,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Background="#FFBCEAE4" FontWeight="Bold"/>
+        <Label x:Name="label1_Copy9" Content="Department" HorizontalAlignment="Left" Margin="44,193,0,0" VerticalAlignment="Top" Height="22" Width="61" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <ComboBox x:Name="comboBox_dprtmnt" HorizontalAlignment="Left" Margin="118,193,0,0" VerticalAlignment="Top" Width="106">
+            <ComboBoxItem Content="CSE"/>
+            <ComboBoxItem Content="EEE"/>
+            <ComboBoxItem Content="CIVIL"/>
+            <ComboBoxItem Content="BBA"/>
+        </ComboBox>
+        <ComboBox x:Name="comboBox_semester" HorizontalAlignment="Left" Margin="118,227,0,0" VerticalAlignment="Top" Width="106">
+            <ComboBoxItem Content="1_1"/>
+            <ComboBoxItem Content="1_2"/>
+            <ComboBoxItem Content="1_3"/>
+            <ComboBoxItem Content="2_1"/>
+            <ComboBoxItem Content="2_2"/>
+            <ComboBoxItem Content="2_3"/>
+            <ComboBoxItem Content="3_1"/>
+            <ComboBoxItem Content="3_2"/>
+            <ComboBoxItem Content="3_3"/>
+            <ComboBoxItem Content="4_1"/>
+            <ComboBoxItem Content="4_2"/>
+            <ComboBoxItem Content="4_3"/>
+        </ComboBox>
+        <Label x:Name="label1_Copy2" Content="Course Teacher" HorizontalAlignment="Left" Margin="32,260,0,0" VerticalAlignment="Top" Height="22" Width="73" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <ComboBox x:Name="comboBox_Teacher_" HorizontalAlignment="Left" Margin="118,260,0,0" VerticalAlignment="Top" Width="170" Height="22"/>
+        <Button x:Name="button_Copy" Content="Modify" HorizontalAlignment="Left" Margin="45,301,0,0" VerticalAlignment="Top" Width="75" Background="#FF0CC6CF" Click="modify_btn"/>
+        <Button x:Name="button_Copy1" Content="Reset" HorizontalAlignment="Left" Margin="273,301,0,0" VerticalAlignment="Top" Width="75" Background="#FFD08BEA" Click="Reset_btn"/>
+        <Button x:Name="button_Copy2" Content="Delete" HorizontalAlignment="Left" Margin="156,301,0,0" VerticalAlignment="Top" Width="75" Background="#FFEA5570" RenderTransformOrigin="1.439,0.427" Click="Delete_btn"/>
+        <TextBox x:Name="Name_box_s" HorizontalAlignment="Left" Height="21" Margin="116,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="249" Background="#FFBCEAE4" FontWeight="Bold"/>
+        <Label x:Name="label1_Copy4" Content="Search By Name" HorizontalAlignment="Left" Margin="32,87,0,0" VerticalAlignment="Top" Height="20" Width="72" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <Button x:Name="button_Copy3" Content="Search" HorizontalAlignment="Left" Margin="377,86,0,0" VerticalAlignment="Top" Width="75" Background="#FF0CC6CF" Click="search_btn_Name"/>
+        <Button x:Name="button_Copy4" Content="Back" HorizontalAlignment="Left" Margin="377,306,0,0" VerticalAlignment="Top" Width="75" Background="#FFBC6FD8" Click="Back_Button"/>
+        <TextBlock x:Name="for_id" HorizontalAlignment="Left" Margin="388,570,0,-200" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Background="#FFF6F7F7" Height="18" RenderTransformOrigin="1.269,2.737" FontSize="18" FontWeight="Bold" Foreground="#FFF7F3F3"/>
+        <TextBlock x:Name="for_name" HorizontalAlignment="Left" Margin="346,546,0,-182" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" RenderTransformOrigin="1.462,-0.459" Height="24" FontWeight="Bold" FontFamily="Monotype Corsiva" FontSize="20" Background="#FFF4F9F8" Foreground="#FFF3F2F2"/>
+
+    </Grid>
+</Window>

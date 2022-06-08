@@ -1,0 +1,22 @@
+﻿<Window x:Class="Student_Management.TeacherGiveMessage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Student_Management"
+        mc:Ignorable="d"
+        Title="TeacherGiveMessage" Height="350" Width="525">
+    <Grid>
+        <Label x:Name="label1_Copy1" Content="Give Message To Students" HorizontalAlignment="Left" Margin="67,139,0,0" VerticalAlignment="Top" Height="21" Width="121" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <TextBox x:Name="Student_Message_Box" HorizontalAlignment="Left" Height="76" Margin="66,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="231" Background="#FFBCEAE4" FontWeight="Bold"/>
+        <Button x:Name="button_Copy1" Content="Submit" HorizontalAlignment="Left" Margin="317,282,0,0" VerticalAlignment="Top" Width="75" Background="#FF0CC6CF" Click="M_T_S"/>
+        <Label x:Name="label1_Copy2" Content="Semester" HorizontalAlignment="Left" Margin="67,188,0,0" VerticalAlignment="Top" Height="22" Width="52" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <ComboBox x:Name="comboBox_semester" HorizontalAlignment="Left" Margin="132,188,0,0" VerticalAlignment="Top" Width="56" Height="20" SelectedIndex="0"/>
+        <Button x:Name="button_Copy" Content="Load" HorizontalAlignment="Left" Margin="222,77,0,0" VerticalAlignment="Top" Width="103" Background="#FF0CC6CF" Click="LOAD" Height="23"/>
+        <Label x:Name="label" Content="Give Message" VerticalAlignment="Top" Height="40" Width="518.001" FontWeight="Bold" FontSize="15" Background="#FFAAD352" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="3.166,0,-4.167,0"/>
+        <Button x:Name="button_Copy2" Content="Back" HorizontalAlignment="Left" Margin="10,287,0,0" VerticalAlignment="Top" Width="39" Background="#FFBC6FD8" Click="Back_Button"/>
+        <TextBlock x:Name="for_id" HorizontalAlignment="Left" Margin="336,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Background="#FFF6F7F7" Height="18" RenderTransformOrigin="1.269,2.737" FontSize="18" FontWeight="Bold" Foreground="#FFF7F3F3"/>
+        <TextBlock x:Name="for_name" HorizontalAlignment="Left" Margin="294,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" RenderTransformOrigin="1.462,-0.459" Height="24" FontWeight="Bold" FontFamily="Monotype Corsiva" FontSize="20" Background="#FFF4F9F8" Foreground="#FFF3F2F2"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,20 @@
+﻿<Window x:Class="Student_Management.Dean_Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Student_Management"
+        mc:Ignorable="d"
+        Title="Dean_Login" Height="350" Width="525">
+    <Grid>
+        <Label x:Name="label" Content="Dean Login Page" VerticalAlignment="Top" Height="40" Width="518" FontWeight="Bold" FontSize="15" Background="#FFAAD352" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="0,16,-1,0"/>
+        <Label x:Name="label_Copy" Content="ID" HorizontalAlignment="Center" Margin="106,89,359,0" VerticalAlignment="Top" Height="22" Width="52" FontWeight="Bold" FontSize="10" Background="#FFAAD352" RenderTransformOrigin="1.106,0.551"/>
+        <Label x:Name="label_Copy1" Content="Password" HorizontalAlignment="Center" Margin="93,137,359,0" VerticalAlignment="Top" Height="21" Width="65" FontWeight="Bold" FontSize="10" Background="#FFAAD352"/>
+        <TextBox x:Name="ID_Box" HorizontalAlignment="Left" Height="22" Margin="185,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" Background="#FFBCEAE4" FontWeight="Bold" Text="Enter ID Number" GotFocus="ID_Box_focus"/>
+        <Button x:Name="button" Content="Submit" HorizontalAlignment="Left" Margin="139,182,0,0" VerticalAlignment="Top" Width="75" Background="#FF0CC6CF" Click="Login_Click_btn"/>
+        <Button x:Name="button_Copy" Content="Reset" HorizontalAlignment="Left" Margin="232,182,0,0" VerticalAlignment="Top" Width="75" Background="#FFE84066" Click="Reset_btn"/>
+        <PasswordBox x:Name="Pass_Box" HorizontalAlignment="Left" Margin="185,136,0,0" VerticalAlignment="Top" Height="22" Width="173" Background="#FFBCEAE4"/>
+        <Button x:Name="button_Copy1" Content="Back" HorizontalAlignment="Left" Margin="22,289,0,0" VerticalAlignment="Top" Width="75" Background="#FFBC6FD8" Click="Back_Button"/>
+
+    </Grid>
+</Window>

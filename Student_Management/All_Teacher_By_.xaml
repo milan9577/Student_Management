@@ -1,0 +1,51 @@
+﻿<Window x:Class="Student_Management.All_Teacher_By_"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Student_Management"
+        mc:Ignorable="d"
+        Title="All_Teacher_By_" Height="300" Width="1000">
+    <Grid>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="10,82,0,0" VerticalAlignment="Top" Height="155" Width="962"/>
+        <Label x:Name="label1_Copy2" Content="Sex" HorizontalAlignment="Left" Margin="207,47,0,0" VerticalAlignment="Top" Height="21" Width="33" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <Label x:Name="label1_Copy4" Content="Religion" HorizontalAlignment="Left" Margin="343,45,0,0" VerticalAlignment="Top" Height="23" Width="47" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.179"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <ComboBox x:Name="comboBox_rl" HorizontalAlignment="Left" Margin="394,46,0,0" VerticalAlignment="Top" Width="106" SelectedIndex="0">
+            <ComboBoxItem Content="ALL"/>
+            <ComboBoxItem Content="Hindu"/>
+            <ComboBoxItem Content="Muslim"/>
+            <ComboBoxItem Content="Buddhist"/>
+            <ComboBoxItem Content="Christian"/>
+        </ComboBox>
+        <Label x:Name="label1_Copy9" Content="Department" HorizontalAlignment="Left" Margin="16,44,0,0" VerticalAlignment="Top" Height="22" Width="59" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <ComboBox x:Name="comboBox_dprtmnt" HorizontalAlignment="Left" Margin="80,44,0,0" VerticalAlignment="Top" Width="106" SelectedIndex="0">
+            <ComboBoxItem Content="ALL"/>
+            <ComboBoxItem Content="CSE"/>
+            <ComboBoxItem Content="EEE"/>
+            <ComboBoxItem Content="CIVIL"/>
+            <ComboBoxItem Content="BBA"/>
+        </ComboBox>
+        <ComboBox x:Name="comboBox_Sex" HorizontalAlignment="Left" Margin="251,46,0,0" VerticalAlignment="Top" Width="82" SelectedIndex="0">
+            <ComboBoxItem Content="ALL"/>
+            <ComboBoxItem Content="Male"/>
+            <ComboBoxItem Content="Female"/>
+            <ComboBoxItem Content="Other"/>
+        </ComboBox>
+        <Button x:Name="button" Content="Show" HorizontalAlignment="Left" Margin="511,46,0,0" VerticalAlignment="Top" Width="75" Background="#FF0CC6CF" Click="Show_btn"/>
+        <Label x:Name="label" Content="View Teacher List" VerticalAlignment="Top" Height="39" Width="972" FontWeight="Bold" FontSize="15" Background="#FFAAD352" HorizontalAlignment="Center" Margin="10,0" HorizontalContentAlignment="Center"/>
+        <Button x:Name="button_Copy1" Content="Back" HorizontalAlignment="Left" Margin="16,242,0,0" VerticalAlignment="Top" Width="75" Background="#FFBC6FD8" Click="Back_Button"/>
+        <TextBlock x:Name="for_id" HorizontalAlignment="Left" Margin="744,304,0,-53" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Background="#FFF6F7F7" Height="18" RenderTransformOrigin="1.269,2.737" FontSize="18" FontWeight="Bold" Foreground="#FFF7F3F3"/>
+        <TextBlock x:Name="for_name" HorizontalAlignment="Left" Margin="511,298,0,-53" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" RenderTransformOrigin="1.462,-0.459" Height="24" FontWeight="Bold" FontFamily="Monotype Corsiva" FontSize="20" Background="#FFF4F9F8" Foreground="#FFF3F2F2"/>
+        <TextBlock x:Name="for_where" HorizontalAlignment="Left" Margin="365,298,0,-47" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Background="#FFF6F7F7" Height="18" RenderTransformOrigin="1.269,2.737" FontSize="18" FontWeight="Bold" Foreground="#FFF7F3F3"/>
+
+    </Grid>
+</Window>

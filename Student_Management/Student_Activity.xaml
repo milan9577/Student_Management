@@ -1,0 +1,61 @@
+﻿<Window x:Class="Student_Management.Student_Activity"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Student_Management"
+        mc:Ignorable="d"
+        Title="Student_Activity" Height="716" Width="525">
+    <Grid Margin="0,0,-8,-2">
+        <Label x:Name="label" Content="Student Activity" VerticalAlignment="Top" Height="40" Width="518" FontWeight="Bold" FontSize="15" Background="#FFAAD352" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="-1,0,0,0"/>
+        <TextBlock x:Name="tb" HorizontalAlignment="Left" Margin="143,97,0,0" TextWrapping="Wrap" Text="Hey" VerticalAlignment="Top" Height="19" Width="127" FontWeight="Bold" Background="#FF86FB9C" Cursor="None"/>
+        <Label x:Name="label1" Content="First Name" HorizontalAlignment="Left" Margin="65,126,0,0" VerticalAlignment="Top" Height="21" Width="59" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <Label x:Name="label1_Copy" Content="Last Name" HorizontalAlignment="Left" Margin="281,127,0,0" VerticalAlignment="Top" Height="21" Width="59" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <Label x:Name="label1_Copy1" Content="Age" HorizontalAlignment="Left" Margin="89,239,0,0" VerticalAlignment="Top" Height="21" Width="33" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <Label x:Name="label1_Copy2" Content="Sex" HorizontalAlignment="Left" Margin="227,239,0,0" VerticalAlignment="Top" Height="21" Width="33" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <Label x:Name="label1_Copy3" Content="Semester" HorizontalAlignment="Left" Margin="270,168,0,0" VerticalAlignment="Top" Height="22" Width="70" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <Label x:Name="label1_Copy4" Content="Religion" HorizontalAlignment="Left" Margin="337,239,0,0" VerticalAlignment="Top" Height="22" Width="44" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <Label x:Name="label1_Copy5" Content="Email" HorizontalAlignment="Left" Margin="89,318,0,0" VerticalAlignment="Top" Height="21" Width="31" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <Label x:Name="label1_Copy6" Content="Phone" HorizontalAlignment="Left" Margin="82,359,0,0" VerticalAlignment="Top" Height="20" Width="42" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE" RenderTransformOrigin="0.526,2.13"/>
+        <Label x:Name="label1_Copy7" Content="Date Of Birth" HorizontalAlignment="Left" Margin="56,277,0,0" VerticalAlignment="Top" Height="21" Width="68" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE" RenderTransformOrigin="0.526,2.13"/>
+        <Label x:Name="label1_Copy8" Content="Location" HorizontalAlignment="Left" Margin="82,398,0,0" VerticalAlignment="Top" Height="20" Width="42" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE" RenderTransformOrigin="0.526,2.13"/>
+        <Label x:Name="label1_Copy10" Content="Old Password" HorizontalAlignment="Left" Margin="65,554,0,0" VerticalAlignment="Top" Height="21" Width="81" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE" RenderTransformOrigin="0.526,2.13"/>
+        <Button x:Name="button" Content="Update" HorizontalAlignment="Left" Margin="316,450,0,0" VerticalAlignment="Top" Width="75" Background="#FF0CC6CF" Click="Update_Click_btn"/>
+        <Label x:Name="label1_Copy9" Content="ID" HorizontalAlignment="Left" Margin="102,96,0,0" VerticalAlignment="Top" Height="20" Width="22" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <Label x:Name="label1_Copy11" Content="Department" HorizontalAlignment="Left" Margin="54,160,0,0" VerticalAlignment="Top" Height="22" Width="70" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <Label x:Name="label1_Copy13" Content="Section" HorizontalAlignment="Left" Margin="54,197,0,0" VerticalAlignment="Top" Height="22" Width="70" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <Label x:Name="label1_Copy14" Content="CGPA" HorizontalAlignment="Left" Margin="307,205,0,0" VerticalAlignment="Top" Height="21" Width="33" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <TextBlock x:Name="tb_fname" HorizontalAlignment="Left" Margin="143,127,0,0" TextWrapping="Wrap" Text="Hey" VerticalAlignment="Top" Height="21" Width="102" FontWeight="Bold" Background="#FF86FB9C" Cursor="None"/>
+        <TextBlock x:Name="tb_lname" HorizontalAlignment="Left" Margin="362,126,0,0" TextWrapping="Wrap" Text="Hey" VerticalAlignment="Top" Height="21" Width="102" FontWeight="Bold" Background="#FF86FB9C" Cursor="None"/>
+        <TextBlock x:Name="tb_department" HorizontalAlignment="Left" Margin="143,161,0,0" TextWrapping="Wrap" Text="Hey" VerticalAlignment="Top" Height="21" Width="102" FontWeight="Bold" Background="#FF86FB9C" Cursor="None"/>
+        <TextBlock x:Name="tb_semester" HorizontalAlignment="Left" Margin="362,169,0,0" TextWrapping="Wrap" Text="Hey" VerticalAlignment="Top" Height="21" Width="102" FontWeight="Bold" Background="#FF86FB9C" Cursor="None"/>
+        <TextBlock x:Name="tb_section" HorizontalAlignment="Left" Margin="143,198,0,0" TextWrapping="Wrap" Text="Hey" VerticalAlignment="Top" Height="21" Width="102" FontWeight="Bold" Background="#FF86FB9C" Cursor="None"/>
+        <TextBlock x:Name="tb_cgpa" HorizontalAlignment="Left" Margin="362,205,0,0" TextWrapping="Wrap" Text="Hey" VerticalAlignment="Top" Height="21" Width="102" FontWeight="Bold" Background="#FF86FB9C" Cursor="None"/>
+        <TextBlock x:Name="tb_age" HorizontalAlignment="Left" Margin="143,239,0,0" TextWrapping="Wrap" Text="Hey" VerticalAlignment="Top" Height="20" Width="50" FontWeight="Bold" Background="#FF86FB9C" Cursor="None"/>
+        <TextBlock x:Name="tb_sex" HorizontalAlignment="Left" Margin="270,239,0,0" TextWrapping="Wrap" Text="Hey" VerticalAlignment="Top" Height="20" Width="50" FontWeight="Bold" Background="#FF86FB9C" Cursor="None"/>
+        <TextBlock x:Name="tb_rel" HorizontalAlignment="Left" Margin="398,241,0,0" TextWrapping="Wrap" Text="Hey" VerticalAlignment="Top" Height="20" Width="50" FontWeight="Bold" Background="#FF86FB9C" Cursor="None"/>
+        <TextBlock x:Name="tb_dob" HorizontalAlignment="Left" Margin="143,278,0,0" TextWrapping="Wrap" Text="Hey" VerticalAlignment="Top" Height="21" Width="102" FontWeight="Bold" Background="#FF86FB9C" Cursor="None"/>
+        <TextBox x:Name="tbx_mail" HorizontalAlignment="Left" Height="23" Margin="143,316,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="290" Background="#FF86FB9C" FontWeight="Bold"/>
+        <TextBox x:Name="tbx_phn" HorizontalAlignment="Left" Height="23" Margin="143,356,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="127" Background="#FF86FB9C" FontWeight="Bold"/>
+        <TextBox x:Name="tbx_loc" HorizontalAlignment="Left" Height="34" Margin="143,398,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" Background="#FF86FB9C" FontWeight="Bold"/>
+        <Label x:Name="label1_Copy12" Content="New Password" HorizontalAlignment="Left" Margin="65,580,0,0" VerticalAlignment="Top" Height="19" Width="81" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE" RenderTransformOrigin="0.526,2.13"/>
+        <Label x:Name="label1_Copy15" Content="Do You want o Change Password?" HorizontalAlignment="Left" Margin="10,519,0,0" VerticalAlignment="Top" Height="21" Width="150" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE" RenderTransformOrigin="0.526,2.13"/>
+        <Label x:Name="label1_Copy16" Content="Retype New Password" HorizontalAlignment="Left" Margin="42,604,0,0" VerticalAlignment="Top" Height="22" Width="104" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE" RenderTransformOrigin="0.526,2.13"/>
+        <TextBox x:Name="tbx_oldpass" HorizontalAlignment="Left" Height="21" Margin="158,554,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Background="#FF86FB9C"/>
+        <TextBox x:Name="tbx_new_pass" HorizontalAlignment="Left" Height="19" Margin="158,580,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Background="#FF86FB9C"/>
+        <TextBox x:Name="tbx_new_rpass" HorizontalAlignment="Left" Height="19" Margin="158,604,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Background="#FF86FB9C"/>
+        <Button x:Name="button_Copy" Content="Update Password" HorizontalAlignment="Left" Margin="326,603,0,0" VerticalAlignment="Top" Width="122" Background="#FF0CC6CF" Click="Update_Password"/>
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="422" Margin="0,45,0,0">
+            <MenuItem Background="#FF97E6EE" FontSize="10" Header="Course " Click="Course"/>
+            <MenuItem Background="#FFA1E289" FontSize="10" Header="Blood Donate" Height="22" Width="79" Click="Blood_Donation"/>
+            <MenuItem Background="#FFE9F574" FontSize="10" Header="Information" Height="24" Width="69" Click="Go"/>
+            <MenuItem Background="#FFA1E289" FontSize="10" Header="Teacher List" Height="22" Width="79" Click="MenuItem_Click"/>
+            <MenuItem Background="#FFE9F574" FontSize="10" Header="Students List" Height="24" Width="69" Click="All_Students"/>
+            <MenuItem Background="#FFBF66F1" FontSize="10" Header="All Result" Height="24" Width="69" Click="All_result"/>
+        </Menu>
+        <Button x:Name="button_Copy1" Content="Back" HorizontalAlignment="Left" Margin="428,450,0,0" VerticalAlignment="Top" Width="75" Background="#FFBC6FD8" Click="Back_Button"/>
+        <TextBlock x:Name="for_id" HorizontalAlignment="Left" Margin="388,570,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Background="#FFF6F7F7" Height="18" RenderTransformOrigin="1.269,2.737" FontSize="18" FontWeight="Bold" Foreground="#FFF7F3F3"/>
+        <TextBlock x:Name="for_name" HorizontalAlignment="Left" Margin="346,546,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" RenderTransformOrigin="1.462,-0.459" Height="24" FontWeight="Bold" FontFamily="Monotype Corsiva" FontSize="20" Background="#FFF4F9F8" Foreground="#FFF3F2F2"/>
+
+    </Grid>
+</Window>

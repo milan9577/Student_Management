@@ -1,0 +1,25 @@
+﻿<Window x:Class="Student_Management.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Student_Management"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid Width="518" Height="328" HorizontalAlignment="Left" Margin="0,0,-183,-9">
+        <Label x:Name="label" Content="Student Management System" VerticalAlignment="Top" Height="40" Width="518" FontWeight="Bold" FontSize="15" Background="#FFAAD352" HorizontalAlignment="Center" Margin="0,16,0,0" HorizontalContentAlignment="Center"/>
+        <Label x:Name="label_Copy" Content="ID" HorizontalAlignment="Center" Margin="106,89,360,0" VerticalAlignment="Top" Height="22" Width="52" FontWeight="Bold" FontSize="10" Background="#FFAAD352" RenderTransformOrigin="1.106,0.551"/>
+        <Label x:Name="label_Copy1" Content="Password" HorizontalAlignment="Center" Margin="93,137,360,0" VerticalAlignment="Top" Height="21" Width="65" FontWeight="Bold" FontSize="10" Background="#FFAAD352"/>
+        <TextBox x:Name="ID_Box" HorizontalAlignment="Left" Height="22" Margin="185,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" Background="#FFBCEAE4" FontWeight="Bold" Text="Enter ID Number" GotFocus="ID_Box_focus"/>
+        <Button x:Name="button" Content="Submit" HorizontalAlignment="Left" Margin="139,182,0,0" VerticalAlignment="Top" Width="75" Background="#FF0CC6CF" Click="Login_Click_btn"/>
+        <Button x:Name="button_Copy" Content="Reset" HorizontalAlignment="Left" Margin="232,182,0,0" VerticalAlignment="Top" Width="75" Background="#FFE84066" Click="Reset_btn"/>
+        <PasswordBox x:Name="Pass_Box" HorizontalAlignment="Left" Margin="185,136,0,0" VerticalAlignment="Top" Height="22" Width="173" Background="#FFBCEAE4"/>
+        <Button x:Name="Registration_btn" Content="Did Not Registration. For Registration Click here" HorizontalAlignment="Left" Margin="106,262,0,0" VerticalAlignment="Top" Width="279" Height="27" Click="Registration_btn_click"/>
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="174" Background="#FFACA7A7">
+            <MenuItem x:Name="Dean_" Background="#FFF97171" Header="Dean" Click="Dean_go"/>
+            <MenuItem Background="#FF8CEE2B" Header="Students" Click="Student_go"/>
+            <MenuItem Background="#FF3ADEC0" Header="Teacher" Click="Teacher_Login"/>
+        </Menu>
+
+    </Grid>
+</Window>

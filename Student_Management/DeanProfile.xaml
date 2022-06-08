@@ -1,0 +1,44 @@
+﻿<Window x:Class="Student_Management.DeanProfile"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Student_Management"
+        mc:Ignorable="d"
+        Title="DeanProfile" Height="350" Width="525">
+    <Grid>
+        <Label x:Name="label" Content="Welcome to Dean Profile" VerticalAlignment="Top" Height="40" Width="518" FontWeight="Bold" FontSize="15" Background="#FFAAD352" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="0,0,0.667,0"/>
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="18" VerticalAlignment="Top" Width="307" Margin="0,45,0,0">
+            <MenuItem Background="#FF97E6EE" FontSize="10" Header="Admin">
+                <MenuItem Header="Add Admin" Click="Add_Admin"/>
+                <MenuItem Header="View and setting" Click="Admin_setting"/>
+                <MenuItem Header="View All" Click="ViewAllAdmin"/>
+            </MenuItem>
+            <MenuItem Background="#FFA1E289" FontSize="10" Header="Students" Height="17" Width="57">
+                <MenuItem Header="Add Students" Click="Add_Student"/>
+                <MenuItem Header="View And Setting" Click="ViewAndSetting"/>
+                <MenuItem Header="View All" Click="View_All_Students"/>
+                <MenuItem Header="Payment And Result" Click="Payment"/>
+            </MenuItem>
+            <MenuItem Background="#FFCC74F5" FontSize="10" Header="Teacher" Height="17" Width="57">
+                <MenuItem Header="Add Teacher" Click="Add_Teacher"/>
+                <MenuItem Header="View And Setting" Click="TeacherViewSetting"/>
+                <MenuItem Header="View All" Click="View_All_Teacher"/>
+            </MenuItem>
+            <MenuItem Background="#FFE9F574" FontSize="10" Header="Course" Height="17" Width="57">
+                <MenuItem Header="Add Subject" Click="Add_Subject"/>
+                <MenuItem Header="View And Setting" Click="CourseViewSetting"/>
+                <MenuItem Header="View All" Click="View_All_Course"/>
+                <MenuItem Header="Course Teacher" Click="Course_Teacher"/>
+            </MenuItem>
+            <MenuItem Background="#FF74F580" FontSize="10" Header="Give Message" Height="18" Width="80" Click="Give_Message"/>
+        </Menu>
+        <Button x:Name="button_Copy1" Content="Back" HorizontalAlignment="Left" Margin="22,289,0,0" VerticalAlignment="Top" Width="75" Background="#FFBC6FD8" Click="Back_Button"/>
+        <TextBlock x:Name="Number_Admin" HorizontalAlignment="Left" Margin="88,123,0,0" TextWrapping="Wrap" Text="Message from dean" VerticalAlignment="Top" Width="137" Background="#FF53C9D4" Height="52" RenderTransformOrigin="1.269,2.737" FontSize="14"/>
+        <TextBlock x:Name="Number_Teacher" HorizontalAlignment="Left" Margin="243,123,0,0" TextWrapping="Wrap" Text="Message from dean" VerticalAlignment="Top" Width="141" Background="#FF07C9A6" Height="52" RenderTransformOrigin="1.269,2.737" FontSize="14"/>
+        <TextBlock x:Name="Number_CSE" HorizontalAlignment="Left" Margin="23,189,0,0" TextWrapping="Wrap" Text="Message from dean" VerticalAlignment="Top" Width="134" Height="59" RenderTransformOrigin="1.269,2.737" FontSize="14" Background="#FFD6B5D5"/>
+        <TextBlock x:Name="Number_EEE" HorizontalAlignment="Left" Margin="172,189,0,0" TextWrapping="Wrap" Text="Message from dean" VerticalAlignment="Top" Width="135" Background="#FFF7A5A0" Height="59" RenderTransformOrigin="1.269,2.737" FontSize="14"/>
+        <TextBlock x:Name="Number_CIVIL" HorizontalAlignment="Left" Margin="332,189,0,0" TextWrapping="Wrap" Text="Message from dean" VerticalAlignment="Top" Width="133" Background="#FFA2D8F2" Height="59" RenderTransformOrigin="1.269,2.737" FontSize="14"/>
+
+    </Grid>
+</Window>
